@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Te"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:scaleType = "centerCrop">
+
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="99dp"
+        android:onClick="onClickStart"
+        android:text="Begin"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/textView" />
+
+
+    <Button
+        android:id="@+id/buttonStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:onClick="onClickStop"
+        android:text="Stop"
+        android:layout_marginStart="12dp"
+        android:layout_above="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="70dp"
+        android:textSize="10pt"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="78dp"
+        android:layout_below="@+id/buttonStart"
+        android:layout_centerHorizontal="true"
+        android:gravity="bottom"
+
+        />
+
+</RelativeLayout>
